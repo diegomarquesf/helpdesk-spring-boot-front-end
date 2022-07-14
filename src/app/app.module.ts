@@ -7,8 +7,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Para trabalhar com formulários no Angular 12
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+
 // Para realizar requisições HTTP
 import { HttpClientModule } from '@angular/common/http';
+
 // Imports para componentes do Angular Material
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -28,12 +30,14 @@ import { MatCardModule } from '@angular/material/card';
 //componentes do projeto
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +62,7 @@ import { HomeComponent } from './components/home/home.component';
     MatTableModule,
     MatIconModule,
     MatListModule,
-    MatCardModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
